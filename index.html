@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>ybigta 디자인팀 2017-1학기 D3 스터디</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				    <h1>D3 study</h1>
+				    <p>Ybigta Data<strong>Design</strong> Team 2017-1</p>
+				</section>
+				<section>
+				    <h1>D3란 무엇일까?</h1>
+				    <p>	
+				    	<span class="fragment fade-up">Data</span>
+				    	<span class="fragment fade-up">Driven</span>
+				    	<span class="fragment fade-up">Documents</span>
+				    </p>
+				    <p class="fragment fade-up">데이터를 기반으로 문서(시각화)를 다룬다</p>
+				    <p class="fragment fade-up">HTML, CSS, SVG, Canvas를 이용해 데이터를 표현한다</p>
+				</section>
+				<section>
+					<h1>왜 D3인가?</h1>
+					<p class="fragment fade-up">높은 자유도</p>
+					<p class="fragment fade-up">많은 라이브러리들이 D3를 기반으로 작성되었다</p>
+					<p class="fragment fade-up">코딩을 통해 시각화의 원리를 이해해보자</p>
+					<p class="fragment fade-up">자바스크립트 연습용..</p>
+				</section>
+				<section>
+					<section>
+						<h1>D3 활용사례</h1>
+					</section>
+					<section>
+						<h2>Collision Detection</h2>
+						<p>https://bl.ocks.org/mbostock/3231298</p>
+						<div id="collision"></div>
+					</section>
+					<section>
+						<h2>Particles</h2>
+						<p>https://bl.ocks.org/mbostock/9539958</p>
+						<div id="particle"></div>
+					</section>
+					<section>
+						<h4>일반적인 그래프도 그릴 수 있습니다(당연히)</h4>
+						<p><a href="https://bl.ocks.org/kerryrodden/7090426" target="_blank">Sequences sunburst</a></p>
+						<p><a href="https://bl.ocks.org/mbostock/4060606" target="_blank">Choropleth</a></p>
+						<p><a href="https://bl.ocks.org/mbostock/3943967" target="_blank">Bar Graph</a></p>
+						<p><a href="http://bl.ocks.org/robschmuecker/7880033" target="_blank">Dendrogram</a></p>
+						<p><a href="http://www.attrs.co.kr/d3/24nobel/" target="_blank">Sankey Diagram</a></p>
+						<p><a href="http://www.attrs.co.kr/d3/09heatmap/" target="_blank">Heatmap</a></p>
+					</section>
+					
+				</section>
+				<section>
+					<h1>스터디 계획</h1>
+					<p class="fragment fade-up">책을 base로</p>
+					<p class="fragment fade-up">매주 1~2명씩 발제하기</p>
+					<p class="fragment fade-up">매주 결과물 한 개씩 만들기</p>
+					<p class="fragment fade-up">내 결과물 모아서 정리하기</p>
+				</section>
+				<section>
+					<h1>최종목표</h1>
+					<p class="fragment fade-up">1) 다른 사람의 코드를 이해할 수 있는 수준</p>
+					<p class="fragment fade-up">2) 예제를 내가 가진 데이터에 맞게 수정하기</p>
+					<p class="fragment fade-up">3) 내 시각화 결과를 웹에 공유하기</p>
+				</section>
+				<section>
+					<p>감사합니다 :)</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script src="js/collision.js"></script>
+		<script src="js/particles.js"></script>
+	</body>
+</html>
